@@ -1,0 +1,63 @@
+# Web Framework & ASGI Server
+fastapi==0.115.12
+uvicorn==0.34.2
+# fastapi-cli==0.0.7 # 개발 시에만 필요하다면 선택적
+
+# Database & ORM
+sqlalchemy==2.0.41
+psycopg2-binary==2.9.10 # PostgreSQL 사용 시
+# alembic # DB 마이그레이션 사용 시 추가
+
+# Data Validation & Settings
+pydantic==2.11.5
+pydantic-settings==2.9.1
+python-dotenv==1.1.0
+
+# LLM & Langchain Ecosystem
+langchain==0.3.25
+langchain-community==0.3.24
+langchain-core==0.3.61
+langchain-openai==0.3.18
+langchain-text-splitters==0.3.8
+langgraph==0.4.7
+openai==1.82.0
+tiktoken==0.9.0
+
+# Hugging Face & Model Handling
+transformers==4.52.3 # 버전 주의 (Unsloth와 호환성 확인 필요)
+datasets==3.6.0
+huggingface-hub==0.32.2
+safetensors==0.5.3
+sentencepiece==0.2.0 # 토크나이저에 필요
+tokenizers==0.21.1  # 토크나이저에 필요
+
+# Unsloth & PEFT (버전 주의, Unsloth 문서 참고)
+unsloth # 버전 명시 권장 (예: unsloth==2024.5)
+
+# Search & Embeddings
+opensearch-py==2.8.0
+sentence-transformers==4.1.0 # 제공된 버전, 최신 버전 확인 권장
+duckduckgo_search==8.0.2 # 웹 검색 도구
+# llama_cpp_python==0.3.9 # 로컬 LLM (GGUF 등) 사용 시
+# gguf==0.16.3 # GGUF 파일 처리 시 (llama-cpp-python이 포함할 수 있음)
+
+# Machine Learning & Data Processing
+torch==2.7.0
+# torchaudio==2.7.0 # 오디오 처리 안 하면 제거 가능
+# torchvision==0.22.0 # 비전 처리 안 하면 제거 가능
+numpy==2.2.6
+pandas==2.2.3
+scikit-learn==1.6.1 # 직접 사용하지 않으면 제거 가능 (다른 라이브러리의 의존성일 수 있음)
+# scipy==1.15.3 # 직접 사용하지 않으면 제거 가능 (다른 라이브러리의 의존성일 수 있음)
+
+# Async & HTTP
+aiohttp==3.12.4 # 비동기 HTTP 클라이언트 (Langchain 등에서 내부적으로 사용될 수 있음)
+httpx==0.28.1 # 동기/비동기 HTTP 클라이언트 (FastAPI, Langchain 등에서 사용)
+# anyio==4.9.0 # ASGI 프레임워크나 httpx의 의존성
+# h11==0.16.0 # HTTP/1.1 구현 (httpx 등의 의존성)
+
+# Utilities
+requests==2.32.3 # HTTP 요청 (Langchain 등에서 사용될 수 있음)
+PyYAML==6.0.2 # YAML 파일 처리
+python-json-logger==3.3.0 # JSON 로깅 사용 시
+tqdm==4.67.1 # 진행률 표시
