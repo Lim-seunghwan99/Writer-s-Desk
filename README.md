@@ -5,6 +5,36 @@
 
 ---
 
+## 🛠️ 기술 스택
+
+- **Frontend**: Next.js, Tailwind CSS, TypeScript  
+- **Backend**: FastAPI, PostgreSQL, SQLAlchemy  
+- **AI**: Hugging Face Transformers, LangChain, OpenSearch, ComfyUI 기반 이미지 생성  
+- **DevOps**: Docker, REST API, GitHub Actions
+
+---
+
+## 👨‍👩‍👧‍👦 팀 구성
+
+| 이름 | 역할 |
+|------|------|
+| 임승환 | 백엔드 개발 |  |
+| 장유진 | 프론트 개발 |  |
+| 박범기 | AI 기능 및 이미지 생성 |
+| 정윤정 | 아키텍처 설계 및 통합 |
+
+---
+
+## 🤖 AI 기능
+
+- 예시 문장 자동 생성 (AI 기반)  
+  ![Generate AI Example](datas/generate_ai_example.gif)
+
+- AI 에이전트 동작  
+  ![AI Agent](datas/ai_agent.gif)
+
+---
+
 ## 🧩 시스템 아키텍처
 
 ![System Architecture](datas/project4_drawio.png)
@@ -13,7 +43,7 @@
 
 ## 🖥️ 전체 워크플로우
 
-![AI Agent Flow](datas/project4_AIAgent.png)
+![AI Agent Flow](datas/project4_AIAgent2.png)
 
 ---
 
@@ -73,33 +103,3 @@
 
 - 사용자 설정 수정 (카테고리 등)  
   ![Put Settings](datas/put_settings.gif)
-
----
-
-## 🤖 AI 기능
-
-- 예시 문장 자동 생성 (AI 기반)  
-  ![Generate AI Example](datas/generate_ai_example.gif)
-
-- AI 에이전트 동작  
-  ![AI Agent](datas/ai_agent.gif)
-
----
-
-## 🛠️ 기술 스택
-
-- **Frontend**: Next.js, Tailwind CSS, TypeScript  
-- **Backend**: FastAPI, PostgreSQL, SQLAlchemy  
-- **AI**: Hugging Face Transformers, LangChain, OpenSearch, ComfyUI 기반 이미지 생성  
-- **DevOps**: Docker, REST API, GitHub Actions
-
----
-
-## 👨‍👩‍👧‍👦 팀 구성
-
-| 이름 | 역할 |
-|------|------|
-| 임승환 | 백엔드 개발 |
-| 장유진 | 프론트 개발 | 
-| 박범기 | AI 기능 및 이미지 생성 |
-| 정윤정 | 아키텍처 설계 및 통합 |
