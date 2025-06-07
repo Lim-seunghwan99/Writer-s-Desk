@@ -35,8 +35,8 @@ LLM 모델 : GPT-4o-mini
 
 | 이름 | 역할 |
 |------|------|
-| 임승환 | 백엔드 API 개발(단어장, 작업, 에피소드, 캐릭터, 세계관, 기획 CRUD), DevOps 기반 시스템 아키텍처 설계 및 구축, 데이터베이스 설계, AI Agent API(RAG, Web Search, LLM기반) 개발 |
-| 장유진 | 프론트 개발, 게스트 로그인, 구글 로그인 구현, DB Docker 기반 컨테이너 구축 |
+| 임승환 | 백엔드 FAST API API 개발, DevOps 기반 시스템 아키텍처 설계 및 구축, 데이터베이스 설계, AI Agent API(RAG, Web Search, LLM기반) 개발 |
+| 장유진 | 프론트 Next.js 개발, 게스트 로그인, 구글 로그인 구현, DB Docker 기반 컨테이너 구축 |
 | 박범기 | Comfy UI 기반 이미지 생성 기능 구현, LLM 기반 유사도 검색 기능 | 
 | 정윤정 | Figma, ppt, UI, LLM 기반 AI 예문 생성기능, LLM 기반 단어 설명 기능 | 
 
@@ -58,6 +58,10 @@ LLM 모델 : GPT-4o-mini
 
 - AI 에이전트 동작  
   ![AI Agent](datas/word_search_ai_relate.gif)
+
+대표적인 AI 기능으로는 AI Graph(DuckDuckGo를 통한 웹 검색, OpenSearch, RAG 기반의 단어, LLM을 이용한 단어 추출)로 유사한 단어 검색 기능,
+세계관, 캐릭터, 에피소드를 생성할 때, OpenSearch VectorDB로 임베딩을 하고, 
+예시 에피소드를 생성할 때 RAG 기반으로 해당 정보를 받아와 LLM을 통해 생성하는 기능 등이 있습니다.
 
 
 ## 📚 주요 기능 및 서비스 화면
@@ -117,17 +121,17 @@ LLM 모델 : GPT-4o-mini
 <table>
   <tr align="center">
     <td><strong>📜 에피소드 추가</strong></td>
-    <td><strong>📚 전체 작품 목록 조회</strong></td>
+    <td><strong>💡 기획 및 아이디어 추가</strong></td>
     <td><strong>👤 캐릭터 생성 및 연결</strong></td>
   </tr>
   <tr>
     <td><img src="datas/post_episode.gif" height="320px" width="240px" /></td>
-    <td><img src="datas/get_work.gif" height="320px" width="240px" /></td>
+    <td><img src="datas/post_planning.gif" height="320px" width="240px" /></td>
     <td><img src="datas/post_character.gif" height="320px" width="240px" /></td>
   </tr>
   <tr>
     <td align="left">작품의 스토리를 구성하는 개별 에피소드를 추가할 수 있습니다. </td>
-    <td align="left">작품의 목록을 확인하고, 각 작품의 상세 정보로 손쉽게 이동할 수 있습니다.</td>
+    <td align="left">구체적인 기획 내용을 추가하고 관리하여 창작의 초기 단계를 체계적으로 정리할 수 있습니다.</td>
     <td align="left">작품에 등장하는 새로운 캐릭터를 생성하고, 해당 캐릭터가 속한 작품이나 등장하는 에피소드에 연결하여 관계를 설정할 수 있습니다.</td>
   </tr>
   </table>
@@ -135,28 +139,14 @@ LLM 모델 : GPT-4o-mini
   <tr align="center">
     <td><strong>🎭 캐릭터 정보 수정</strong></td>
     <td><strong>🎨 AI 캐릭터 이미지 생성</strong></td>
-    <td><strong>⚙️ 사용자 설정 변경</strong></td>
   </tr>
   <tr>
     <td><img src="datas/put_character.gif" height="320px" width="240px" /></td>
     <td><img src="datas/create_character_image.gif" height="320px" width="240px" /></td>
-    <td><img src="datas/put_settings.gif" height="320px" width="240px" /></td>
   </tr>
   <tr>
     <td align="left">이미 등록된 캐릭터의 정보를 수정할 수 있습니다.</td>
     <td align="left">캐릭터의 외형 묘사를 기반으로, AI 이미지 생성 모델이 캐릭터의 초상화를 그려줍니다.</td>
-    <td align="left">캐릭터 설정을 변경하는 기능입니다.</td>
-  </tr>
-  </table>
-<table>
-  <tr align="center">
-  <td><strong>💡 기획 및 아이디어 추가</strong></td>
-  </tr>
-  <tr>
-  <td><img src="datas/post_planning.gif" height="320px" width="240px" /></td>
-  </tr>
-  <tr>
-  <td align="left">구체적인 기획 내용을 추가하고 관리하여 창작의 초기 단계를 체계적으로 정리할 수 있습니다.</td>
   </tr>
   </table>
 </div>
@@ -167,4 +157,49 @@ LLM 모델 : GPT-4o-mini
      - Docker와 Docker Compose가 설치되어 있어야 합니다.
      - PostgreSQL 데이터베이스를 설정합니다.
   
-  
+  2. **프로젝트 설치**
+      - cd backend
+      - docker-compose up -d (linux 환경의 경우)
+      - pip install -r requirements.txt
+
+      cd frontend
+      - npm install
+      - npm run dev
+
+
+    
+### API 명세서
+- [API1](datas/api_1.png)
+- [API2](datas/api_2.png)
+
+
+### env 파일 설정
+```python
+DATABASE_URL="postgresql://username:password@localhost:5432/word"
+
+TAVILY_API_KEY = "your_tavily_api_key_here"
+
+
+OPENAI_API_KEY="your_openai_api_key_here"
+
+OPENSEARCH_SINGLE_HOST="localhost"
+OPENSEARCH_SINGLE_PORT="9200"
+OPENSEARCH_USER="your_opensearch_username"
+OPENSEARCH_PASSWORD="your_opensearch_password"
+OPENSEARCH_INDEX_NAME="korean-english-dictionary"
+EMBEDDING_MODEL_NAME="snunlp/KR-SBERT-V40K-klueNLI-augSTS"
+OPENSEARCH_RAG_INDEX_NAME="your_rag_index_name_here"
+
+# 웹 검색 노드에서 사용할 LLM 설정
+MODEL_NAME  = "gpt-4o-mini" 
+LLM_WEB_SEARCH_MODEL_NAME=${MODEL_NAME} 
+LLM_WEB_SEARCH_TEMPERATURE=0.0
+
+# 단어 생성 노드에서 사용할 LLM 설정
+LLM_GENERATE_MODEL_NAME=${MODEL_NAME} 
+LLM_GENERATE_TEMPERATURE=0.1
+
+# 대사 생성용 LLM 설정
+DIALOGUE_LLM_MODEL_NAME=${MODEL_NAME} # 또는 다른 원하는 모델
+DIALOGUE_LLM_TEMPERATURE=0.7
+```
