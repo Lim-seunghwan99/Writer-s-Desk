@@ -35,20 +35,28 @@ LLM 모델 : GPT-4o-mini
 
 | 이름 | 역할 |
 |------|------|
-| 임승환 | 백엔드 API 개발(단어장, 작업, 에피소드, 캐릭터, 세계관, 기획 CRUD) | DevOps 기반 시스템 아키텍처 설계 및 구축 | 데이터베이스 설계 | AI Agent API(RAG, Web Search, LLM기반) 개발 |
-| 장유진 | 프론트 개발 | 게스트 로그인, 구글 로그인 구현 | DB Docker 기반 컨테이너 구축 |
-| 박범기 | Comfy UI 기반 이미지 생성 기능 구현 | LLM 기반 유사도 검색 기능 | 
-| 정윤정 | 피그마 | ppt | UI | LLM 기반 AI 예문 생성기능 | LLM 기반 단어 설명 기능 | 
+| 임승환 | 백엔드 API 개발(단어장, 작업, 에피소드, 캐릭터, 세계관, 기획 CRUD), DevOps 기반 시스템 아키텍처 설계 및 구축, 데이터베이스 설계, AI Agent API(RAG, Web Search, LLM기반) 개발 |
+| 장유진 | 프론트 개발, 게스트 로그인, 구글 로그인 구현, DB Docker 기반 컨테이너 구축 |
+| 박범기 | Comfy UI 기반 이미지 생성 기능 구현, LLM 기반 유사도 검색 기능 | 
+| 정윤정 | Figma, ppt, UI, LLM 기반 AI 예문 생성기능, LLM 기반 단어 설명 기능 | 
+
+---
+
+### AI Agent 그래프
+![AI Agent](datas/Project4_AIAgent2.png)
+
+### 시스템 아키텍처
+![System Architecture](datas/project4_drawio2.png)
 
 ---
 
 ## 🤖 AI 기능
 
 - 예시 문장 자동 생성 (AI 기반)  
-  ![Generate AI Example](datas/generate_ai_example.gif)
+  ![Generate AI Example](datas/generate_ai_usages.gif)
 
 - AI 에이전트 동작  
-  ![AI Agent](datas/ai_agent.gif)
+  ![AI Agent](datas/word_search_ai_relate.gif)
 
 
 ## 📚 주요 기능 및 서비스 화면
@@ -58,19 +66,21 @@ LLM 모델 : GPT-4o-mini
 <table>
   <tr align="center">
     <td><strong>예시 문장 자동 생성</strong></td>
-    <td><strong>AI 에이전트 동작</strong></td>
+    <td><strong>유사한 단어 검색</strong></td>
     <td><strong>소셜 로그인</strong></td>
   </tr>
   <tr>
     <td><img src="datas/generate_ai_usages.gif" height="320px" width="240px" /></td>
-    <td><img src="datas/ai_agent.gif" height="320px" width="240px" /></td>
+    <td><img src="datas/ai_search_simillar.gif" height="320px" width="240px" /></td>
     <td><img src="datas/google_login.gif" height="320px" width="240px" /></td>
   </tr>
   <tr>
-    <td>입력된 단어 기반으로 AI가 예시 문장을 자동으로 생성합니다.</td>
-    <td>AI 에이전트의 전체 동작 플로우를 GIF로 확인할 수 있습니다.</td>
+    <td>입력된 단어 기반으로 RAG와 LLM기반으로 예시 문장을 생성합니다.</td>
+    <td>LLM 기반 유사한 단어를 검색하는 기능입니다.</td>
     <td>Google OAuth를 통한 간편 로그인 기능을 제공합니다.</td>
   </tr>
+
+  <br/>
 
   <tr align="center">
     <td><strong>단어 등록</strong></td>
@@ -88,6 +98,8 @@ LLM 모델 : GPT-4o-mini
     <td>원하는 단어를 빠르게 검색할 수 있습니다.</td>
   </tr>
 
+  <br/>
+
   <tr align="center">
     <td><strong>AI 연관 단어 검색</strong></td>
     <td><strong>작품 등록</strong></td>
@@ -104,6 +116,8 @@ LLM 모델 : GPT-4o-mini
     <td>세계관을 설정하고 작품과 연결할 수 있습니다.</td>
   </tr>
 
+  <br/>
+
   <tr align="center">
     <td><strong>에피소드 등록</strong></td>
     <td><strong>전체 작품 조회</strong></td>
@@ -111,13 +125,13 @@ LLM 모델 : GPT-4o-mini
   </tr>
   <tr>
     <td><img src="datas/post_episode.gif" height="320px" width="240px" /></td>
-    <td><img src="datas/get_works.gif" height="320px" width="240px" /></td>
+    <td><img src="datas/get_work.gif" height="320px" width="240px" /></td>
     <td><img src="datas/post_character.gif" height="320px" width="240px" /></td>
   </tr>
   <tr>
     <td>작품에 연결된 에피소드를 추가합니다.</td>
     <td>등록된 전체 작품 목록을 확인합니다.</td>
-    <td>새로운 캐릭터를 생성하고 작품에 연결합니다.</td>
+    <td>새로운 캐릭터를 생성하고 에피소드 및 작품에 연결합니다.</td>
   </tr>
 
   <tr align="center">
@@ -135,9 +149,12 @@ LLM 모델 : GPT-4o-mini
     <td>AI를 통해 캐릭터 외형 이미지를 생성합니다.</td>
     <td>사용자 설정(카테고리 등)을 변경합니다.</td>
   </tr>
-    <tr>
+  <tr align="center">
+    <td><strong>기획 추가</strong></td>
     <td><img src="datas/post_planning.gif" height="320px" width="240px" /></td>
-    
+  </tr>
+  <tr>
+    <td>기획을 추가합니다.</td>
   </tr>
 </table>
 
