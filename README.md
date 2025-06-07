@@ -33,73 +33,91 @@
 - AI 에이전트 동작  
   ![AI Agent](datas/ai_agent.gif)
 
----
 
-## 🧩 시스템 아키텍처
+## 📚 주요 기능 및 서비스 화면
 
-![System Architecture](datas/project4_drawio.png)
+<div align="center">
 
----
+<table>
+  <tr align="center">
+    <td><strong>예시 문장 자동 생성</strong></td>
+    <td><strong>AI 에이전트 동작</strong></td>
+    <td><strong>소셜 로그인</strong></td>
+  </tr>
+  <tr>
+    <td><img src="datas/generate_ai_example.gif" height="180px" /></td>
+    <td><img src="datas/ai_agent.gif" height="180px" /></td>
+    <td><img src="datas/google_login.gif" height="180px" /></td>
+  </tr>
+  <tr>
+    <td>입력된 단어 기반으로 AI가 예시 문장을 자동으로 생성합니다.</td>
+    <td>AI 에이전트의 전체 동작 플로우를 GIF로 확인할 수 있습니다.</td>
+    <td>Google OAuth를 통한 간편 로그인 기능을 제공합니다.</td>
+  </tr>
 
-## 🖥️ 전체 워크플로우
+  <tr align="center">
+    <td><strong>단어 등록</strong></td>
+    <td><strong>단어 정렬</strong></td>
+    <td><strong>단어 검색</strong></td>
+  </tr>
+  <tr>
+    <td><img src="datas/post_word.gif" height="180px" /></td>
+    <td><img src="datas/sort_word_detail.gif" height="180px" /></td>
+    <td><img src="datas/search_word.gif" height="180px" /></td>
+  </tr>
+  <tr>
+    <td>단어를 추가하여 단어장에 등록합니다.</td>
+    <td>단어를 가나다순 등 기준으로 정렬합니다.</td>
+    <td>원하는 단어를 빠르게 검색할 수 있습니다.</td>
+  </tr>
 
-![AI Agent Flow](datas/project4_AIAgent2.png)
+  <tr align="center">
+    <td><strong>AI 연관 단어 검색</strong></td>
+    <td><strong>작품 등록</strong></td>
+    <td><strong>세계관 등록</strong></td>
+  </tr>
+  <tr>
+    <td><img src="datas/word_search_ai_relate.gif" height="180px" /></td>
+    <td><img src="datas/post_work.gif" height="180px" /></td>
+    <td><img src="datas/post_world.gif" height="180px" /></td>
+  </tr>
+  <tr>
+    <td>입력 단어와 연관된 단어를 AI가 추론하여 보여줍니다.</td>
+    <td>작품을 등록하여 설정, 등장인물 등을 관리할 수 있습니다.</td>
+    <td>세계관을 설정하고 작품과 연결할 수 있습니다.</td>
+  </tr>
 
----
+  <tr align="center">
+    <td><strong>에피소드 등록</strong></td>
+    <td><strong>전체 작품 조회</strong></td>
+    <td><strong>캐릭터 등록</strong></td>
+  </tr>
+  <tr>
+    <td><img src="datas/post_episode.gif" height="180px" /></td>
+    <td><img src="datas/get_works.gif" height="180px" /></td>
+    <td><img src="datas/post_character.gif" height="180px" /></td>
+  </tr>
+  <tr>
+    <td>작품에 연결된 에피소드를 추가합니다.</td>
+    <td>등록된 전체 작품 목록을 확인합니다.</td>
+    <td>새로운 캐릭터를 생성하고 작품에 연결합니다.</td>
+  </tr>
 
-## 🔐 소셜 로그인
+  <tr align="center">
+    <td><strong>캐릭터 수정</strong></td>
+    <td><strong>AI 캐릭터 이미지 생성</strong></td>
+    <td><strong>설정 수정</strong></td>
+  </tr>
+  <tr>
+    <td><img src="datas/put_character.gif" height="180px" /></td>
+    <td><img src="datas/create_character_image.gif" height="180px" /></td>
+    <td><img src="datas/put_settings.gif" height="180px" /></td>
+  </tr>
+  <tr>
+    <td>등록된 캐릭터의 이름, 설명, 세계관 등을 수정합니다.</td>
+    <td>AI를 통해 캐릭터 외형 이미지를 생성합니다.</td>
+    <td>사용자 설정(카테고리 등)을 변경합니다.</td>
+  </tr>
+</table>
 
-- 구글 로그인 지원
-![Google Login](datas/google_login.gif)
-
----
-
-## 📚 단어 관리 기능
-
-- 단어 등록  
-  ![Post Word](datas/post_word.gif)
-
-- 단어 정렬 (가나다순 등)  
-  ![Sort Word Detail](datas/sort_word_detail.gif)
-
-- 단어 검색  
-  ![Search Word](datas/search_word.gif)
-
-- AI 기반 연관 단어 검색  
-  ![AI Relate Word Search](datas/word_search_ai_relate.gif)
-
----
-
-## ✍️ 작품 및 세계관 관리
-
-- 작품 등록  
-  ![Post Work](datas/post_work.gif)
-
-- 세계관 등록  
-  ![Post World](datas/post_world.gif)
-
-- 에피소드 등록  
-  ![Post Episode](datas/post_episode.gif)
-
-- 전체 작품 목록 조회  
-  ![Get Works](datas/get_works.gif)
-
----
-
-## 🧙 캐릭터 생성 및 관리
-
-- 캐릭터 등록  
-  ![Post Character](datas/post_character.gif)
-
-- 캐릭터 수정  
-  ![Put Character](datas/put_character.gif)
-
-- 캐릭터 이미지 생성 (AI 기반)  
-  ![Create Character Image](datas/create_character_image.gif)
-
----
-
-## ⚙️ 설정 관리
-
-- 사용자 설정 수정 (카테고리 등)  
-  ![Put Settings](datas/put_settings.gif)
+</div>
