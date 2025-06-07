@@ -140,17 +140,17 @@
   <tr align="center">
     <td><strong>🎭 캐릭터 정보 수정</strong></td>
     <td><strong>🎨 AI 캐릭터 이미지 생성</strong></td>
-    <td></td>
+    <td><strong>🤖 RAG/LLM 기반 예시 문장 생성</strong></td>
   </tr>
   <tr>
     <td><img src="datas/put_character.gif" height="320px" width="240px" /></td>
     <td><img src="datas/create_character_image.gif" height="320px" width="240px" /></td>
-    <td></td>
+    <td><img src="datas/generate_ai_usages.gif" height="320px" width="240px" /></td>
   </tr>
   <tr>
     <td align="left">이미 등록된 캐릭터의 정보를 수정할 수 있습니다.</td>
     <td align="left">캐릭터의 외형 묘사를 기반으로, AI 이미지 생성 모델이 캐릭터의 초상화를 그려줍니다.</td>
-    <td></td>
+    <td align="left">미관상의 문제로 중복된 기능을 다시 넣었습니다, ai 예문 생성.</td>
   </tr>
   </table>
 </div>
@@ -163,7 +163,7 @@
   
   2. **프로젝트 설치**
       - cd backend
-      - docker-compose up -d (linux 환경의 경우)
+      - docker-compose up -d (linux 환경에서 실행)
       - pip install -r requirements.txt
 
       cd frontend
@@ -173,8 +173,8 @@
 
     
 ### API 명세서
-- [API1](datas/api_1.png)
-- [API2](datas/api_2.png)
+![API1](datas/api_1.png)
+![API2](datas/api_2.png)
 
 
 ### env 파일 설정(root 디렉토리에 .env 파일 생성)
