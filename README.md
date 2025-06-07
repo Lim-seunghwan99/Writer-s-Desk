@@ -43,7 +43,8 @@ LLM 모델 : GPT-4o-mini
 ---
 
 ### AI Agent 그래프
-![AI Agent](datas/Project4_AIAgent2.png)
+![AI Agent](datas/project4_AIAgent2.png)
+
 
 ### 시스템 아키텍처
 ![System Architecture](datas/project4_drawio2.png)
@@ -62,30 +63,28 @@ LLM 모델 : GPT-4o-mini
 ## 📚 주요 기능 및 서비스 화면
 
 <div align="center">
-
-<table>
+  <table>
+    <tr align="center">
+      <td><strong>🤖 RAG/LLM 기반 예시 문장 생성</strong></td>
+      <td><strong>🧠 AI 유사 단어 검색</strong></td>
+      <td><strong>🔒 간편 소셜 로그인</strong></td>
+    </tr>
+    <tr>
+      <td><img src="datas/generate_ai_usages.gif" height="320px" width="240px" /></td>
+      <td><img src="datas/ai_search_simillar.gif" height="320px" width="240px" /></td>
+      <td><img src="datas/google_login.gif" height="320px" width="240px" /></td>
+    </tr>
+    <tr>
+      <td align="left">작가가 글을 쓸 때 막히는 부분을 해소할 수 있도록, 입력한 단어의 의미와 뉘앙스에 맞는 예시 문장을 RAG 및 LLM   기술을 활용하여 동적으로 생성해줍니다.</td>
+      <td align="left">문맥적으로 유사하거나 연상되는 단어들을 LLM이 추론하여 제시합니다.</td>
+      <td align="left">별도의 회원가입 절차 없이, 사용자가 기존에 사용하던 구글 계정을 서비스에 로그인할 수 있는 기능을 제공합니다.</td>
+    </tr>
+  </table>
+  <table>
   <tr align="center">
-    <td><strong>예시 문장 자동 생성</strong></td>
-    <td><strong>유사한 단어 검색</strong></td>
-    <td><strong>소셜 로그인</strong></td>
-  </tr>
-  <tr>
-    <td><img src="datas/generate_ai_usages.gif" height="320px" width="240px" /></td>
-    <td><img src="datas/ai_search_simillar.gif" height="320px" width="240px" /></td>
-    <td><img src="datas/google_login.gif" height="320px" width="240px" /></td>
-  </tr>
-  <tr>
-    <td>입력된 단어 기반으로 RAG와 LLM기반으로 예시 문장을 생성합니다.</td>
-    <td>LLM 기반 유사한 단어를 검색하는 기능입니다.</td>
-    <td>Google OAuth를 통한 간편 로그인 기능을 제공합니다.</td>
-  </tr>
-
-  <br/>
-
-  <tr align="center">
-    <td><strong>단어 등록</strong></td>
-    <td><strong>단어 정렬</strong></td>
-    <td><strong>단어 검색</strong></td>
+    <td><strong>✍️ 나만의 단어 등록</strong></td>
+    <td><strong>📊 직관적인 단어 정렬</strong></td>
+    <td><strong>🔍 빠른 단어 검색</strong></td>
   </tr>
   <tr>
     <td><img src="datas/post_word.gif" height="320px" width="240px" /></td>
@@ -93,17 +92,16 @@ LLM 모델 : GPT-4o-mini
     <td><img src="datas/search_word.gif" height="320px" width="240px" /></td>
   </tr>
   <tr>
-    <td>단어를 추가하여 단어장에 등록합니다.</td>
-    <td>단어를 조회수, 최신순 등 기준으로 정렬합니다.</td>
-    <td>원하는 단어를 빠르게 검색할 수 있습니다.</td>
+    <td align="left">자신만의 단어, 의미, 예시 문장을 추가하여 개인화된 단어장을 만들고 관리할 수 있습니다.</td>
+    <td align="left">등록한 단어들을 조회수, 생성일(최신순/오래된순) 등 다양한 기준에 따라 정렬할 수 있습니다.</td>
+  <td align="left">단어장에 등록된 단어 중에서 원하는 단어를 찾아볼 수 있는 기능을 제공합니다.</td>
   </tr>
-
-  <br/>
-
+</table>
+  <table>
   <tr align="center">
-    <td><strong>AI 연관 단어 검색</strong></td>
-    <td><strong>작품 등록</strong></td>
-    <td><strong>세계관 등록</strong></td>
+    <td><strong>🔗 AI 연관 단어 추천</strong></td>
+    <td><strong>📖 작품 정보 등록</strong></td>
+    <td><strong>🌍 세계관 설정 및 관리</strong></td>
   </tr>
   <tr>
     <td><img src="datas/word_search_ai_relate.gif" height="320px" width="240px" /></td>
@@ -111,17 +109,16 @@ LLM 모델 : GPT-4o-mini
     <td><img src="datas/post_world.gif" height="320px" width="240px" /></td>
   </tr>
   <tr>
-    <td>입력 단어와 연관된 단어를 AI가 추론하여 보여줍니다.</td>
-    <td>작품을 등록하여 설정, 등장인물 등을 관리할 수 있습니다.</td>
-    <td>세계관을 설정하고 작품과 연결할 수 있습니다.</td>
-  </tr>
-
-  <br/>
-
+    <td align="left">입력한 단어와 관련된 새로운 아이디어를 얻을 수 있도록, Rag, WebSearch, LLM으로 구성된 AI Agent기반의 단어 추천이 이루어집니다.</td>
+    <td align="left">작품에 사용될 설정, 등장인물, 세계관 등을 체계적으로 관리할 수 있습니다.</  td>
+  <td align="left">작품의 배경이 되는 독창적인 세계관을 생성하고 상세 설정을 추가할 수 있습니다.</td>
+</tr>
+  </table>
+<table>
   <tr align="center">
-    <td><strong>에피소드 등록</strong></td>
-    <td><strong>전체 작품 조회</strong></td>
-    <td><strong>캐릭터 등록</strong></td>
+    <td><strong>📜 에피소드 추가</strong></td>
+    <td><strong>📚 전체 작품 목록 조회</strong></td>
+    <td><strong>👤 캐릭터 생성 및 연결</strong></td>
   </tr>
   <tr>
     <td><img src="datas/post_episode.gif" height="320px" width="240px" /></td>
@@ -129,15 +126,16 @@ LLM 모델 : GPT-4o-mini
     <td><img src="datas/post_character.gif" height="320px" width="240px" /></td>
   </tr>
   <tr>
-    <td>작품에 연결된 에피소드를 추가합니다.</td>
-    <td>등록된 전체 작품 목록을 확인합니다.</td>
-    <td>새로운 캐릭터를 생성하고 에피소드 및 작품에 연결합니다.</td>
+    <td align="left">작품의 스토리를 구성하는 개별 에피소드를 추가할 수 있습니다. </td>
+    <td align="left">작품의 목록을 확인하고, 각 작품의 상세 정보로 손쉽게 이동할 수 있습니다.</td>
+    <td align="left">작품에 등장하는 새로운 캐릭터를 생성하고, 해당 캐릭터가 속한 작품이나 등장하는 에피소드에 연결하여 관계를 설정할 수 있습니다.</td>
   </tr>
-
+  </table>
+<table>
   <tr align="center">
-    <td><strong>캐릭터 수정</strong></td>
-    <td><strong>AI 캐릭터 이미지 생성</strong></td>
-    <td><strong>설정 수정</strong></td>
+    <td><strong>🎭 캐릭터 정보 수정</strong></td>
+    <td><strong>🎨 AI 캐릭터 이미지 생성</strong></td>
+    <td><strong>⚙️ 사용자 설정 변경</strong></td>
   </tr>
   <tr>
     <td><img src="datas/put_character.gif" height="320px" width="240px" /></td>
@@ -145,25 +143,28 @@ LLM 모델 : GPT-4o-mini
     <td><img src="datas/put_settings.gif" height="320px" width="240px" /></td>
   </tr>
   <tr>
-    <td>등록된 캐릭터의 이름, 설명, 세계관 등을 수정합니다.</td>
-    <td>AI를 통해 캐릭터 외형 이미지를 생성합니다.</td>
-    <td>사용자 설정(카테고리 등)을 변경합니다.</td>
+    <td align="left">이미 등록된 캐릭터의 정보를 수정할 수 있습니다.</td>
+    <td align="left">캐릭터의 외형 묘사를 기반으로, AI 이미지 생성 모델이 캐릭터의 초상화를 그려줍니다.</td>
+    <td align="left">캐릭터 설정을 변경하는 기능입니다.</td>
   </tr>
+  </table>
+<table>
   <tr align="center">
-    <td><strong>기획 추가</strong></td>
-    <td><img src="datas/post_planning.gif" height="320px" width="240px" /></td>
+  <td><strong>💡 기획 및 아이디어 추가</strong></td>
   </tr>
   <tr>
-    <td>기획을 추가합니다.</td>
+  <td><img src="datas/post_planning.gif" height="320px" width="240px" /></td>
   </tr>
-</table>
-
+  <tr>
+  <td align="left">구체적인 기획 내용을 추가하고 관리하여 창작의 초기 단계를 체계적으로 정리할 수 있습니다.</td>
+  </tr>
+  </table>
 </div>
-
-
-### 포팅 메뉴얼
-1. **포팅 환경 설정**
-   - Docker와 Docker Compose가 설치되어 있어야 합니다.
-   - PostgreSQL 데이터베이스를 설정합니다.
-
-
+  
+  
+  ### 포팅 메뉴얼
+  1. **포팅 환경 설정**
+     - Docker와 Docker Compose가 설치되어 있어야 합니다.
+     - PostgreSQL 데이터베이스를 설정합니다.
+  
+  
