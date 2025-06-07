@@ -1,24 +1,27 @@
 # 📚 Writer's Desk
 
-작가를 위한 AI 기능이 포함된 단어장 서비스입니다.  
-총 4명이 협업하여 프론트엔드, 백엔드, AI 기능 및 시스템 아키텍처를 구성했습니다.
+<p>작가를 위한 AI 기능이 포함된 단어장 서비스입니다.  </p>
+<p>작가들이 단어를 등록하고 관리할 수 있는 단어장 서비스로, 작품 설정, 등장인물 관리, 에피소드 작성 등 다양한 기능을 제공합니다.</p>
+<p>이 서비스는 AI 기능을 통해 단어의 예시 문장을 자동 생성하고, 연관 단어를 추천하는 등 작가의 창작 과정을 도와줍니다.</p>
+<p>캐릭터 이미지 생성 기능도 포함되어 있어, 작가가 설정한 캐릭터의 외형을 AI가 자동으로 생성해줍니다.</p>
+<p>총 4명이 협업하여 프론트엔드, 백엔드, AI 기능 및 시스템 아키텍처를 구성했습니다.</p>
+<p>대표적인 AI 기능으로는 <strong>AI Graph(DuckDuckGo를 통한 웹 검색, OpenSearch, RAG 기반의 단어, LLM을 이용한 단어 추출)</strong>로 유사한 단어 검색 기능,</p>
+<p>세계관, 캐릭터, 에피소드를 생성할 때, <strong>OpenSearch VectorDB로 임베딩을</strong> 하고, </p>
+<p>에피소드를 생성할 때 RAG 기반으로 해당 정보를 받아와 LLM을 통해 에피소드 예시를 생성하는 기능 등이 있습니다.</p>
 
 ---
 
 ## 📖 프로젝트 소개
-기간 : 2025.05.19 ~ 2025.06.05
-인원 : 4명
-Writer's Desk는 작가들이 단어를 등록하고 관리할 수 있는 단어장 서비스입니다.
-작품 설정, 등장인물 관리, 에피소드 작성 등 작가의 창작 활동을 지원하는 다양한 기능을 제공합니다.
-이 서비스는 AI 기능을 통해 단어의 예시 문장을 자동 생성하고, 연관 단어를 추천하는 등 작가의 창작 과정을 도와줍니다.
-캐릭터 이미지 생성 기능도 포함되어 있어, 작가가 설정한 캐릭터의 외형을 AI가 자동으로 생성해줍니다.
-
-임베딩 데이터 : 한글 사전 데이터
-https://huggingface.co/datasets/binjang/NIKL-korean-english-dictionary/viewer/default/train?p=531&views%5B%5D=train
-
-임베딩 모델 : https://huggingface.co/snunlp/KR-SBERT-V40K-klueNLI-augSTS
-
-LLM 모델 : GPT-4o-mini
+<p>기간 : 2025.05.19 ~ 2025.06.05</p>
+<p>인원 : 4명</p>
+<p>Writer's Desk는 작가들이 단어를 등록하고 관리할 수 있는 단어장 서비스입니다.</p>
+<p>작품 설정, 등장인물 관리, 에피소드 작성 등 작가의 창작 활동을 지원하는 다양한 기능을 제공합니다.</p>
+<p>이 서비스는 AI 기능을 통해 단어의 예시 문장을 자동 생성하고, 연관 단어를 추천하는 등 작가의 창작 과정을 도와줍니다.</p>
+<p>캐릭터 이미지 생성 기능도 포함되어 있어, 작가가 설정한 캐릭터의 외형을 AI가 자동으로 생성해줍니다.</p>
+<p>임베딩 데이터 : 한글 사전 데이터</p>
+<p>https://huggingface.co/datasets/binjang/NIKL-korean-english-dictionary/viewer/default/train?p=531&views%5B%5D=train</p>
+<p>임베딩 모델 : https://huggingface.co/snunlp/KR-SBERT-V40K-klueNLI-augSTS</p>
+<p>LLM 모델 : GPT-4o-mini</p>
 
 ---
 
@@ -37,8 +40,8 @@ LLM 모델 : GPT-4o-mini
 |------|------|
 | 임승환 | 백엔드 FAST API API 개발, DevOps 기반 시스템 아키텍처 설계 및 구축, 데이터베이스 설계, AI Agent API(RAG, Web Search, LLM기반) 개발 |
 | 장유진 | 프론트 Next.js 개발, 게스트 로그인, 구글 로그인 구현, DB Docker 기반 컨테이너 구축 |
-| 박범기 | Comfy UI 기반 이미지 생성 기능 구현, LLM 기반 유사도 검색 기능 | 
-| 정윤정 | Figma, ppt, UI, LLM 기반 AI 예문 생성기능, LLM 기반 단어 설명 기능 | 
+| 박범기 | Comfy UI 기반 이미지 생성 기능 구현, LLM 기반 유사도 검색 기능 등 AI 기능 구현, 백엔드 API 개발 | 
+| 정윤정 | Figma, ppt, UI, LLM 기반 AI 예문 생성기능, LLM 기반 단어 설명 기능 등 AI 기능 구현, 백엔드 API 개발 | 
 
 ---
 
@@ -59,9 +62,7 @@ LLM 모델 : GPT-4o-mini
 - AI 에이전트 동작  
   ![AI Agent](datas/word_search_ai_relate.gif)
 
-대표적인 AI 기능으로는 AI Graph(DuckDuckGo를 통한 웹 검색, OpenSearch, RAG 기반의 단어, LLM을 이용한 단어 추출)로 유사한 단어 검색 기능,
-세계관, 캐릭터, 에피소드를 생성할 때, OpenSearch VectorDB로 임베딩을 하고, 
-예시 에피소드를 생성할 때 RAG 기반으로 해당 정보를 받아와 LLM을 통해 생성하는 기능 등이 있습니다.
+
 
 
 ## 📚 주요 기능 및 서비스 화면
@@ -139,14 +140,17 @@ LLM 모델 : GPT-4o-mini
   <tr align="center">
     <td><strong>🎭 캐릭터 정보 수정</strong></td>
     <td><strong>🎨 AI 캐릭터 이미지 생성</strong></td>
+    <td></td>
   </tr>
   <tr>
     <td><img src="datas/put_character.gif" height="320px" width="240px" /></td>
     <td><img src="datas/create_character_image.gif" height="320px" width="240px" /></td>
+    <td></td>
   </tr>
   <tr>
     <td align="left">이미 등록된 캐릭터의 정보를 수정할 수 있습니다.</td>
     <td align="left">캐릭터의 외형 묘사를 기반으로, AI 이미지 생성 모델이 캐릭터의 초상화를 그려줍니다.</td>
+    <td></td>
   </tr>
   </table>
 </div>
@@ -173,7 +177,7 @@ LLM 모델 : GPT-4o-mini
 - [API2](datas/api_2.png)
 
 
-### env 파일 설정
+### env 파일 설정(root 디렉토리에 .env 파일 생성)
 ```python
 DATABASE_URL="postgresql://username:password@localhost:5432/word"
 
