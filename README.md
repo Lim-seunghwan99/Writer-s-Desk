@@ -21,7 +21,7 @@
 <p>임베딩 데이터 : 한글 사전 데이터</p>
 <div>
 <a href="https://huggingface.co/datasets/binjang/NIKL-korean-english-dictionary/viewer/default/train?p=531&views%5B%5D=train" target="_blank">
-  임베딩 데이터셋
+  임베딩 데이터셋 : NIKL-korean-english-dictionary
 </a>
 </div>
 <div>
