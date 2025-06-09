@@ -5,7 +5,7 @@
 <p>이 서비스는 AI 기능을 통해 단어의 예시 문장을 자동 생성하고, 연관 단어를 추천하는 등 작가의 창작 과정을 도와줍니다.</p>
 <p>캐릭터 이미지 생성 기능도 포함되어 있어, 작가가 설정한 캐릭터의 외형을 AI가 자동으로 생성해줍니다.</p>
 <p>총 4명이 협업하여 프론트엔드, 백엔드, AI 기능 및 시스템 아키텍처를 구성했습니다.</p>
-<p>대표적인 AI 기능으로는 <strong>AI Graph(DuckDuckGo를 통한 웹 검색, OpenSearch, RAG 기반의 단어, LLM을 이용한 단어 추출)</strong>로 유사한 단어 검색 기능,</p>
+<p>대표적인 AI 기능으로는 <strong>LangChain(DuckDuckGo를 통한 웹 검색, OpenSearch, RAG 기반의 단어, LLM을 이용한 단어 추출)</strong>로 유사한 단어 검색 기능,</p>
 <p>세계관, 캐릭터, 에피소드를 생성할 때, <strong>OpenSearch VectorDB로 임베딩을</strong> 하고, </p>
 <p>에피소드를 생성할 때 RAG 기반으로 해당 정보를 받아와 LLM을 통해 에피소드 예시를 생성하는 기능 등이 있습니다.</p>
 
