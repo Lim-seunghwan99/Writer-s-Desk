@@ -19,12 +19,17 @@
 <p>이 서비스는 AI 기능을 통해 단어의 예시 문장을 자동 생성하고, 연관 단어를 추천하는 등 작가의 창작 과정을 도와줍니다.</p>
 <p>캐릭터 이미지 생성 기능도 포함되어 있어, 작가가 설정한 캐릭터의 외형을 AI가 자동으로 생성해줍니다.</p>
 <p>임베딩 데이터 : 한글 사전 데이터</p>
+<div>
 <a href="https://huggingface.co/datasets/binjang/NIKL-korean-english-dictionary/viewer/default/train?p=531&views%5B%5D=train" target="_blank">
   임베딩 데이터셋
 </a>
+</div>
+<div>
 <a href="https://huggingface.co/snunlp/KR-SBERT-V40K-klueNLI-augSTS">
   임베딩 모델 : KR-SBERT-V40K-klueNLI-augSTS
 </a>
+</div>
+
 <p>LLM 모델 : GPT-4o-mini</p>
 
 ---
