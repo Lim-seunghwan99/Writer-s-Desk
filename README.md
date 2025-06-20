@@ -56,7 +56,7 @@
 
 ---
 
-### AI Agent 그래프
+### AI 그래프
 ![AI Agent](datas/project4_AIAgent2.png)
 
 
