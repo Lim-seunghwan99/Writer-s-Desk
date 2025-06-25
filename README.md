@@ -49,7 +49,7 @@
 
 | 이름 | 역할 |
 |------|------|
-| 임승환 | 백엔드 FAST API 개발, DevOps 기반 시스템 아키텍처 설계 및 구축, AI Agent API(RAG, Web Search, LLM기반) 개발 |
+| 임승환 | 백엔드 API 개발, 시스템 아키텍처 설계 및 구축, AI Agent(RAG, Web Search, LLM) 개발 |
 | 장유진 | 프론트 Next.js 개발, 게스트 로그인, 구글 로그인 구현, DB Docker 기반 컨테이너 구축 |
 | 박범기 | Comfy UI 기반 이미지 생성 기능 구현, LLM 기반 유사도 검색 기능 등 AI 기능 구현, 백엔드 API 개발 | 
 | 정윤정 | Figma, ppt, UI, LLM 기반 AI 예문 생성기능, LLM 기반 단어 설명 기능 등 AI 기능 구현, 백엔드 API 개발 | 
